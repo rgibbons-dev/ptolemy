@@ -3,59 +3,52 @@
    ============================================ */
 const APPS = [
   {
-    name: "Atlas",
-    icon: "\uD83C\uDF0D",
-    color: "#2563eb",
-    gradient: "linear-gradient(135deg, #2563eb, #1d4ed8)",
+    name: "rssed",
+    icon: "icons/rssed.svg",
+    color: "#fbbf24",
+    gradient: "linear-gradient(135deg, #1e293b, #0f172a)",
     url: "#about"
   },
   {
-    name: "Compass",
-    icon: "\uD83E\uDDED",
-    color: "#059669",
-    gradient: "linear-gradient(135deg, #059669, #047857)",
+    name: "fridge",
+    icon: "icons/fridge.svg",
+    color: "#3b82f6",
+    gradient: "linear-gradient(135deg, #3b82f6, #2563eb)",
     url: "#about"
   },
   {
-    name: "Meridian",
-    icon: "\u2600\uFE0F",
-    color: "#d97706",
-    gradient: "linear-gradient(135deg, #d97706, #b45309)",
+    name: "monsweeper",
+    icon: "icons/monsweeper.svg",
+    color: "#ffd700",
+    gradient: "linear-gradient(135deg, #252842, #1a1b2e)",
     url: "#about"
   },
   {
-    name: "Orbit",
-    icon: "\uD83D\uDE80",
-    color: "#7c3aed",
-    gradient: "linear-gradient(135deg, #7c3aed, #6d28d9)",
+    name: "diningnote",
+    icon: "icons/betterdiningnote.svg",
+    color: "#ef4444",
+    gradient: "linear-gradient(135deg, #ef4444, #dc2626)",
     url: "#about"
   },
   {
-    name: "Beacon",
-    icon: "\uD83D\uDCA1",
-    color: "#0891b2",
-    gradient: "linear-gradient(135deg, #0891b2, #0e7490)",
+    name: "rolodex",
+    icon: "icons/rolodex.svg",
+    color: "#14b8a6",
+    gradient: "linear-gradient(135deg, #14b8a6, #0d9488)",
     url: "#about"
   },
   {
-    name: "Chronicle",
-    icon: "\uD83D\uDCDA",
-    color: "#dc2626",
-    gradient: "linear-gradient(135deg, #dc2626, #b91c1c)",
+    name: "workout",
+    icon: "icons/workout.svg",
+    color: "#4794cd",
+    gradient: "linear-gradient(135deg, #4794cd, #2d7ab5)",
     url: "#about"
   },
   {
-    name: "Keystone",
-    icon: "\uD83D\uDD11",
-    color: "#4f46e5",
-    gradient: "linear-gradient(135deg, #4f46e5, #4338ca)",
-    url: "#about"
-  },
-  {
-    name: "Prism",
-    icon: "\uD83D\uDD2E",
-    color: "#db2777",
-    gradient: "linear-gradient(135deg, #db2777, #be185d)",
+    name: "cal",
+    icon: "icons/cal.svg",
+    color: "#6b7280",
+    gradient: "linear-gradient(135deg, #6b7280, #4b5563)",
     url: "#about"
   }
 ];
@@ -109,8 +102,8 @@ function renderApps(order) {
     item.draggable = true;
 
     item.innerHTML =
-      '<div class="app-icon" style="background: ' + app.gradient + '">' +
-        '<span role="img" aria-label="' + app.name + '">' + app.icon + '</span>' +
+      '<div class="app-icon">' +
+        '<img src="' + app.icon + '" alt="' + app.name + '" draggable="false" />' +
       '</div>' +
       '<span class="app-label">' + app.name + '</span>';
 

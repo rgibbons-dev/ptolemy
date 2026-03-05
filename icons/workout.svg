@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4794cd"/>
+      <stop offset="100%" stop-color="#2d7ab5"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="27" fill="url(#bg)"/>
+  <!-- Dumbbell -->
+  <g transform="translate(60, 48)">
+    <!-- Bar -->
+    <rect x="-28" y="-3" width="56" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+    <!-- Left weight -->
+    <rect x="-34" y="-12" width="12" height="24" rx="3" fill="#ffffff" opacity="0.95"/>
+    <!-- Right weight -->
+    <rect x="22" y="-12" width="12" height="24" rx="3" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <!-- Chart/progress bars -->
+  <g transform="translate(28, 72)">
+    <rect x="0" y="16" width="12" height="14" rx="2" fill="#56a880" opacity="0.8"/>
+    <rect x="17" y="10" width="12" height="20" rx="2" fill="#56a880" opacity="0.85"/>
+    <rect x="34" y="4" width="12" height="26" rx="2" fill="#56a880" opacity="0.9"/>
+    <rect x="51" y="-2" width="12" height="32" rx="2" fill="#56a880"/>
+  </g>
+</svg>
