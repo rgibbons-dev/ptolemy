@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ptolemy Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Ptolemy</div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-tab="launcher">Launcher</button>
+      <button class="nav-tab" data-tab="about">About</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Launcher View -->
+    <section id="launcher" class="view active">
+      <div class="launcher-bg"></div>
+      <div class="launcher-container">
+        <div class="app-grid" id="app-grid"></div>
+      </div>
+      <div class="dock-dots" id="dock-dots"></div>
+    </section>
+
+    <!-- About View -->
+    <section id="about" class="view">
+      <div class="about-container">
+        <div class="about-hero">
+          <h1>Ptolemy</h1>
+          <p class="tagline">Building tools that map your world.</p>
+        </div>
+        <div class="about-content">
+          <div class="about-card">
+            <h2>Who We Are</h2>
+            <p>Ptolemy is a software studio crafting thoughtful, well-designed applications. We believe great software should feel intuitive, look beautiful, and get out of your way so you can focus on what matters.</p>
+          </div>
+          <div class="about-card">
+            <h2>Our Approach</h2>
+            <p>Every app we build starts with a real problem. We prototype fast, iterate with care, and ship when it's ready &mdash; not before. Our small team means every decision is intentional.</p>
+          </div>
+          <div class="about-card">
+            <h2>Get In Touch</h2>
+            <p>Interested in working with us or have feedback on one of our apps? We'd love to hear from you.</p>
+            <a href="mailto:hello@ptolemy.dev" class="contact-link">hello@ptolemy.dev</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

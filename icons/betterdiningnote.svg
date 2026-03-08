@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="27" fill="url(#bg)"/>
+  <!-- Plate / bowl -->
+  <ellipse cx="60" cy="68" rx="34" ry="12" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="60" cy="64" rx="34" ry="12" fill="#ffffff" opacity="0.9"/>
+  <!-- Fork -->
+  <g transform="translate(38, 22) rotate(10)">
+    <rect x="0" y="18" width="3" height="22" rx="1" fill="#ffffff" opacity="0.85"/>
+    <rect x="-2" y="0" width="2" height="14" rx="1" fill="#ffffff" opacity="0.85"/>
+    <rect x="1" y="0" width="2" height="16" rx="1" fill="#ffffff" opacity="0.85"/>
+    <rect x="4" y="0" width="2" height="14" rx="1" fill="#ffffff" opacity="0.85"/>
+  </g>
+  <!-- Pencil/note -->
+  <g transform="translate(68, 26) rotate(15)">
+    <rect x="0" y="0" width="6" height="32" rx="1" fill="#fef2f2"/>
+    <polygon points="0,32 6,32 3,38" fill="#fef2f2"/>
+    <rect x="0" y="0" width="6" height="6" rx="1" fill="#fca5a5"/>
+  </g>
+  <!-- Checkmark -->
+  <path d="M50 88 L56 94 L70 80" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

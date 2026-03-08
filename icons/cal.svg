@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b7280"/>
+      <stop offset="100%" stop-color="#4b5563"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="27" fill="url(#bg)"/>
+  <!-- Calendar frame -->
+  <rect x="20" y="28" width="80" height="72" rx="8" fill="#ffffff" opacity="0.92"/>
+  <!-- Calendar header bar -->
+  <rect x="20" y="28" width="80" height="20" rx="8" fill="#b6b4b4"/>
+  <rect x="20" y="40" width="80" height="8" fill="#b6b4b4"/>
+  <!-- Calendar rings -->
+  <rect x="40" y="22" width="4" height="14" rx="2" fill="#4b5563"/>
+  <rect x="76" y="22" width="4" height="14" rx="2" fill="#4b5563"/>
+  <!-- Day grid -->
+  <g transform="translate(28, 54)" fill="#e5e7eb">
+    <rect x="0" y="0" width="12" height="10" rx="2"/>
+    <rect x="16" y="0" width="12" height="10" rx="2"/>
+    <rect x="32" y="0" width="12" height="10" rx="2"/>
+    <rect x="48" y="0" width="12" height="10" rx="2"/>
+    <rect x="0" y="14" width="12" height="10" rx="2"/>
+    <rect x="16" y="14" width="12" height="10" rx="2"/>
+    <rect x="32" y="14" width="12" height="10" rx="2"/>
+    <rect x="48" y="14" width="12" height="10" rx="2"/>
+    <rect x="0" y="28" width="12" height="10" rx="2"/>
+    <rect x="16" y="28" width="12" height="10" rx="2"/>
+  </g>
+  <!-- Selected day highlight -->
+  <rect x="60" y="68" width="12" height="10" rx="2" fill="#db4a4a"/>
+  <!-- Transit ticket hint -->
+  <rect x="60" y="82" width="12" height="10" rx="2" fill="#db4a4a" opacity="0.5"/>
+</svg>
