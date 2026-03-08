@@ -101,11 +101,18 @@ function renderApps(order) {
     item.setAttribute("data-index", index);
     item.draggable = true;
 
-    item.innerHTML =
-      '<div class="app-icon">' +
-        '<img src="' + app.icon + '" alt="' + app.name + '" draggable="false" />' +
-      '</div>' +
-      '<span class="app-label">' + app.name + '</span>';
+    var iconDiv = document.createElement("div");
+    iconDiv.className = "app-icon";
+    var img = document.createElement("img");
+    img.src = app.icon;
+    img.alt = app.name;
+    img.draggable = false;
+    iconDiv.appendChild(img);
+    var label = document.createElement("span");
+    label.className = "app-label";
+    label.textContent = app.name;
+    item.appendChild(iconDiv);
+    item.appendChild(label);
 
     item.addEventListener("click", function (e) {
       // If in jiggle mode, don't navigate
@@ -122,7 +129,10 @@ function renderApps(order) {
 
 function renderDots() {
   var dots = document.getElementById("dock-dots");
-  dots.innerHTML = '<div class="dock-dot active"></div>';
+  dots.textContent = "";
+  var dot = document.createElement("div");
+  dot.className = "dock-dot active";
+  dots.appendChild(dot);
 }
 
 /* ============================================
@@ -372,7 +382,9 @@ function loadOrder() {
     if (saved) {
       var parsed = JSON.parse(saved);
       // Validate that it has all indices
-      if (parsed.length === APPS.length) {
+      if (parsed.length === APPS.length && parsed.every(function (v) {
+        return typeof v === "number" && v >= 0 && v < APPS.length;
+      })) {
         return parsed;
       }
     }
